@@ -2,6 +2,9 @@ description: >
   This command checks py3 compat for a plugin
 steps:
   - run:
+      name: Git checkout
+      command: git checkout ${CIRCLE_BRANCH}
+  - run:
       name: install futurize
       command: pip install future --user
   - run:
