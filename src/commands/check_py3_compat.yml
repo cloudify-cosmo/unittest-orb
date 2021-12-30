@@ -5,6 +5,9 @@ steps:
       name: Git checkout
       command: git checkout ${CIRCLE_BRANCH}
   - run:
+      name: remove _compat.py
+      command: find . -name "_compat.py" -exec rm {} \;
+  - run:
       name: install futurize
       command: pip install future --user
   - run:
