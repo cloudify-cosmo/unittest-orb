@@ -1,5 +1,5 @@
 description: >
-  This command validates the version of a plugin
+  This command validates the docs of a plugin
 steps:
   - run:
       name: "Pull Submodules"
