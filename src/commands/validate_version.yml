@@ -37,3 +37,4 @@ steps:
   - attach_workspace:
       at: workspace
   - run: ecosystem-test validate-plugin-version
+  - run: ecosystem-test validate-plugin-yamls
