@@ -23,7 +23,7 @@ steps:
       name: Git checkout
       command: git checkout ${CIRCLE_BRANCH}
   - run:
-      name: Also the submodules
+      name: Add the submodules.
       command: git submodule update --init --recursive
   - run:
       name: Install tox
