@@ -38,3 +38,4 @@ steps:
       at: workspace
   - run: ecosystem-test validate-plugin-version
   - run: ecosystem-test validate-plugin-yamls
+  - run: ecosystem-test validate-pulls
